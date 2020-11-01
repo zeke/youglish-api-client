@@ -1,0 +1,25 @@
+{
+  "name": "youglish-api-client",
+  "description": "A Node.js client for the Youglish REST API",
+  "repository": "https://github.com/zeke/youglish-api-client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "got": "^11.8.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.1",
+    "nock": "^13.0.4",
+    "nodenv": "^0.1.0",
+    "standard": "^16.0.1"
+  },
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest test.js && standard"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
