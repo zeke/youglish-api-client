@@ -10,19 +10,20 @@ module.exports = class YouglishClient {
 
   async searchVideos (opts = {}) {
     const url = `${baseURL}/videos/search`
-    opts = {
+    const searchParams = {
       key: this.key,
       query: '',
       lg: 'english',
-      accent: null,
-      restricted: null, // 'no' or 'yes'
-      gender: null, // 'm', 'f', or null
-      page: null, // positive integer
+      // accent: null,
+      // restricted: null, // 'no' or 'yes'
+      // gender: null, // 'm', 'f', or null
+      // page: null, // positive integer
       ...opts
     }
     let res
+
     try {
-      res = await got(url, { query: opts }).json()
+      res = await got(url, { searchParams }).json()
       return res
     } catch (error) {
       console.error(error, opts, url)
