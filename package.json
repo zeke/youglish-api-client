@@ -2,7 +2,7 @@
   "name": "youglish-api-client",
   "description": "A Node.js client for the Youglish REST API",
   "repository": "https://github.com/zeke/youglish-api-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
     "got": "^11.8.0"
